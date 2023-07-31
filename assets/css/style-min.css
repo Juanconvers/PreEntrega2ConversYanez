@@ -17,46 +17,24 @@
     font-weight: 400;
 }
 
-#gridContainer{
+.container-fluid{
     font-family: 'montserrat';
     color: #000000;
     text-align: center;
     }
 
-/* GRID GENERAL */
-
-#gridContainer{
-    display: grid;
-    grid-template-rows: 160px auto auto auto;
-    grid-template-columns: 25% 25% 25% 25%; 
-    grid-template-areas: "header header header header"
-    "title title title title" 
-    "main main main main" 
-    "footer footer footer footer";          
-    }
-
 /* CONTENIDO */
 
 #navigation{
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    }
+    font-weight: 700;
+}
 
 .navigation__link--logo{
     width: 150px;
     padding: 0 30px;
 }
 
-.navigation__link{
-    margin: 15px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #000000;
-    text-decoration-line: none;
-    }
+
 
 /* PSEUDOCLASES */
 
@@ -269,78 +247,3 @@
     background:  rgb(59, 59, 59);;
     }
 
-/* VISTA PARA MOVIL */
-
-@media (max-width: 480px) {
-    #gridContainer {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "title"
-            "main"
-            "footer";
-        grid-template-rows: 320px auto auto auto;
-        grid-template-columns: minmax(320px, 420px);
-        }
-
-    #navigation{
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        text-align: center;     
-
-        }
-
-    .navigation__link{
-        margin: 4px;
-        font-size: 16px;
-        }
-           
-    .banner__image{
-        width: 320px;
-        } 
-
-    .text__paragraph{
-        font-size: 16px;
-        }
-
-    #filter{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: flex-start;
-         }
-
-    .filter__selecter{
-        padding: 7px 40px;
-        }
-
-    .menu__button{
-        width: 190px;
-        padding: 5px 20px;
-        }
-
-    .footer__info {
-        padding-top: 10px;
-        }
-
-    .footer__link, .footer__paragraph{
-        line-height: 25px;
-        }
-
-    
-
-    
-}
-
-
-
-text-align: center;
-}
-
-li {
-    position: relative;
-    top: 20px;
