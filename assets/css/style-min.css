@@ -27,14 +27,12 @@
 
 #navigation{
     font-weight: 700;
-}
+    }
 
 .navigation__link--logo{
     width: 150px;
-    padding: 0 30px;
-}
 
-
+    }
 
 /* PSEUDOCLASES */
 
@@ -52,35 +50,18 @@
 
 #title{
     background-color: rgb(197, 197, 197);
-    font-size: 30px;
-    font-weight: 700;
     padding: 10px;
     text-align: center;
     }
+
+h2, h3, h4, H5{
+    font-weight: 700;
+}
 
 #main{
     grid-area: main;
         
 }
-
-#text__sheet{
-    padding: 20px 100px;
-    text-align: left;
-    }
-
-#table{
-    display: flex;
-    justify-content: center;
-}
-
-.banner{
-    display: flex;
-    justify-content: center;
-    }    
-
-.banner__image{
-    width: 700px;
-    } 
 
 #text{
     height: auto;
@@ -91,145 +72,13 @@
 }
 
 .text__headline{
-    padding: 10px;
-    font-size: 24px;
-    font-weight: 700;
-     }
-
-.text__paragraph{
-    padding: 10px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 24px;
-    color: #000000;
+    padding: 30px;
     }
 
-
-
-#filter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-     }
-
-.filter__selecter{
-    padding: 30px 30px;
-    }
-
-#menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-     }
-
-.menu__button{
-    width: 230px;
-    padding: 10px 30px;
-}
-
-#text__location{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: center;
-}
-
-.text__location--item{
-    padding: 10px 30px;
-    
-}
-
-.text__location--paragraph{
-    text-align: justify;
-    font-size: 24px;
-}
-
-#form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-.form__item{
-    padding: 5px;
-    font-size: 20px;
-}
-
-.form__input{
-    height: 20px;
-    width: 600px;
-}
-
-.form__input--message{
-    height: 60px;
-    width: 600px;
-}
-
-.form__input--button{
-    width: 70px;
-    height: 30px;
-}
-
-#shopping{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    justify-content: space-evenly;
-    gap: 60px;
-    }
-
-.shopping__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
-.shopping__image{
-    height: 600px;
-}
-
-.shopping__image--camisa{
-    height: 450px;
-}
-
-.shopping__link{
-    text-decoration-line: none;
-    font-weight: 400;
-    font-size: 18px;
-    color: #000000;
-    }
     
 #footer{
-    grid-area: footer;
     background-color: rgb(197, 197, 197);
-    padding-bottom: 20px;
-    margin-top: 20px;
-}
-
-#footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-evenly;
     }
-
-.footer__info{
-    padding-top: 20px;
-    }
-
-.footer__headline{
-    font-weight: 700;
-    font-size: 22px;
-    color: #000000;
-    margin: 15px;
-    
-}
 
 .footer__link, .footer__paragraph{
     text-decoration-line: none;
