@@ -58,6 +58,8 @@
     text-decoration-line: none;
     }
 
+/* PSEUDOCLASES */
+
 .navigation__link:hover {
     color: white;
     background:  rgb(0, 33, 179);;
@@ -83,6 +85,16 @@
         
 }
 
+#text__sheet{
+    padding: 20px 100px;
+    text-align: left;
+    }
+
+#table{
+    display: flex;
+    justify-content: center;
+}
+
 .banner{
     display: flex;
     justify-content: center;
@@ -102,12 +114,9 @@
 
 .text__headline{
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    }
+    font-size: 24px;
+    font-weight: 700;
+     }
 
 .text__paragraph{
     padding: 10px;
@@ -117,17 +126,19 @@
     color: #000000;
     }
 
+
+
 #filter{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-content: center;
-         }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+     }
 
 .filter__selecter{
-        padding: 30px 30px;
-         }
+    padding: 30px 30px;
+    }
 
 #menu{
     display: flex;
@@ -142,8 +153,49 @@
     padding: 10px 30px;
 }
 
-#text__second{
-    margin: 35px;
+#text__location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.text__location--item{
+    padding: 10px 30px;
+    
+}
+
+.text__location--paragraph{
+    text-align: justify;
+    font-size: 24px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.form__item{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.form__input{
+    height: 20px;
+    width: 600px;
+}
+
+.form__input--message{
+    height: 60px;
+    width: 600px;
+}
+
+.form__input--button{
+    width: 70px;
+    height: 30px;
 }
 
 #shopping{
@@ -173,7 +225,7 @@
     font-size: 18px;
     color: #000000;
     }
-
+    
 #footer{
     grid-area: footer;
     background-color: rgb(197, 197, 197);
@@ -209,6 +261,8 @@
     margin: 15px;
     line-height: 35px;
 }
+
+/* PSEUDOCLASES */
 
 .footer__link:hover {
     color: white;

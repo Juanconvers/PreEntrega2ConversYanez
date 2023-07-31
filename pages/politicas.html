@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/FavIconFrankyCharlie.jpg">
-	<title>FrankyCharlie.com</title>
-	<link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header class="encabezado">
-       	<nav>
-			<ul class="menu">
-				<img src="../assets/img/LogoFrankyCharly.png" width="150" alt="logo-frankycharlie" class="logo">
-				<li><a href="../index.html">HOME</a></li>
-                <li><a href="../pages/ninas.html">NIÑAS</a></li>
-				<li><a href="../pages/ninos.html">NIÑOS</a></li>
-				<li><a href="../pages/tienda.html">NUESTRA TIENDA</a></li>
-				<li><a href="../pages/politicas.html">SOBRE TU COMPRA</a></li>
-			</ul>
-		</nav><br>
-	</header>
-	<main>
-		<h1>¡GRACIAS POR ELEGIRNOS!</h1><br>
-            <h3>Éstas son nuestras políticas comerciales <br>
-            Léelas detalladamente. ¡Transparencia ante todo!</h3>
-            <section>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/FavIconFrankyCharlie.jpg">
+		<title>FrankyCharlie.com</title>
+		<link rel="stylesheet" href="../assets/css/style.css">
+	</head>
+	
+	<body id="gridContainer">
+	
+		<!-- NAVEGADOR -->
+	
+		<header id="navigation">
+			   <img 
+				class="navigation__link--logo"
+				src="../assets/img/LogoFrankyCharly.png" 
+				alt="logo-frankycharlie">
+            <a class="navigation__link" href="../index.html">HOME</a>
+            <a class="navigation__link" href="./ninas.html">NIÑAS</a>
+            <a class="navigation__link" href="./ninos.html">NIÑOS</a>
+            <a class="navigation__link" href="./tienda.html">NUESTRA TIENDA</a>
+            <a class="navigation__link" href="./politicas.html">SOBRE TU COMPRA</a>	
+        </header>
+	
+		<!-- TÍTULO DE LA PÁGINA -->
+
+            <div id="title"> 
+                <p>¡GRACIAS POR ELEGIRNOS!</p>
+            </div>
+
+        <main id="main">
+		       
+            <p class="text__headline">Éstas son nuestras políticas comerciales <br>
+            Léelas detalladamente. ¡Transparencia ante todo!</p>
+            
+            <section id="text__sheet">
 				<div>
-					<article> TÉRMINOS Y CONDICIONES <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
-				</div>
+					<p class="text__headline">TÉRMINOS Y CONDICIONES</p> <br>
+                    <p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                    </p>
+                    </div>
 				<br>
-                <article> PRECIO Y TIEMPOS DE ENTREGA 
+                <p class="text__headline">PRECIO Y TIEMPOS DE ENTREGA</p> 
                 <br>
-                <table cellspacing="0" cellpadding="3" border="3">
+            
+                <!-- TABLA DE PRECIOS Y TIEMPOS DE ENTREGA -->
+                
+                <table id="table" cellspacing="0" cellpadding="3" border="3">
                     <tr>
                         <th>Tipo de envío</th>
                         <th>Bogotá</th>
@@ -66,54 +81,79 @@
                 </table>
                 <br>
                 <div>
-					<article> POLÍTICAS COMERCIALES Y DE CAMBIOS <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
-				</div>
+					<p class="text__headline">POLÍTICAS COMERCIALES Y DE CAMBIOS</p> <br>
+                    <p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                    </p>
+                    </div>
                 <br>
                 <div>
-					<article> POLÍTICAS DE TRATAMIENTO DE DATOS <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
-				</div>
+					<p class="text__headline">POLÍTICAS DE TRATAMIENTO DE DATOS</p> <br>
+                    <p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                    </p>
+                    </div>
                 <br>
+                
+                <!-- PREGUNTAS FRECUENTES -->
+
                 <div>
-					<article> PREGUNTAS FRECUENTES <br>
+					<p class="text__headline">PREGUNTAS FRECUENTES</p> <br>
                     <ol>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?</li><br>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
+                        <li><p class="text__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquid accusantium fugiat neque ipsum dolores doloremque iusto repellat iste excepturi in vero consectetur dolor vel, consequuntur sint adipisci illo saepe?
+                        </p>
                     </ol>
 				</div>
 	</main>
 	
-	<footer class="footer">
-		<section class="contacto">
-			<h3>CONTACTO</h3>
-				<p>Centro Comercial Bulevar - Local 277 <br>
-					Calle 127 No. 56-12, Bogotá D.C. <br>
-					hola@frankycharlie.com
-					+57 315 366 2087
-				</p>
-		</section>
-		
-		<section class="sobretucompra">
-			<h3>SOBRE TU COMPRA</h3>
-			<a href="../pages/politicas.html">Términos y Condiciones</a></li>
-			<a href="../pages/politicas.html">Políticas de privacidad</a></li>
-			<a href="../pages/politicas.html">Política Comercial y de Cambios</a></li>
-		</section>
+		<!-- PIE DE PÁGINA -->
 
-		<section class="redessociales">
-			<h3>REDES SOCIALES</h3>
-			<a href="https://es-la.facebook.com/" target="_blank">FACEBOOK</a></li>
-			<a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li>
-			<a href="https://twitter.com" target="_blank">TWITTER</a></li>
-			<p>Franky Charlie S.A.S. marca registrada <br>
+		<footer id="footer">
+			
+			<div class="footer__info">
+				<h3 class="footer__headline">CONTACTO</h3>
+				
+				<p class="footer__paragraph">Centro Comercial Bulevar - Local 277 <br>
+					
+					Calle 127 No. 56-12, Bogotá D.C. <br>
+					
+					hola@frankycharlie.com <br>
+					
+					+57 315 366 2087 <br>
+				</p>
+			</div>
+			<div class="footer__info">
+				<h3 class="footer__headline">SOBRE TU COMPRA</h3>
+				
+				<a class="footer__link" href="pages/politicas.html">Términos y Condiciones</a></li><br>
+				
+				<a class="footer__link" href="pages/politicas.html">Políticas de privacidad</a></li><br>
+				
+				<a class="footer__link" href="pages/politicas.html">Política Comercial y de Cambios</a></li><br>
+			</div>
+			<div class="footer__info">
+				<h3 class="footer__headline">REDES SOCIALES</h3>
+				
+				<a class="footer__link" href="https://es-la.facebook.com/" target="_blank">FACEBOOK</a></li><br>
+				
+				<a class="footer__link" href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></li><br>
+				
+				<a class="footer__link" href="https://twitter.com" target="_blank">TWITTER</a></li><br>
+				
+				<p class="footer__paragraph">Franky Charlie S.A.S. marca registrada <br>
 				Todos los derechos reservados</p>
-		</section>
-	</footer>
-</body>
+			</div>	
+			
+		</footer>
+	</body>
 </html>
