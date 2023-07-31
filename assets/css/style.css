@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/* Fonts */
+/* FUENTES */
 
 @font-face {
     font-family: 'montserrat';
@@ -20,22 +20,22 @@
 #gridContainer{
     font-family: 'montserrat';
     color: #000000;
+    text-align: center;
     }
 
-/* Grid General */
+/* GRID GENERAL */
 
 #gridContainer{
     display: grid;
     grid-template-rows: 160px auto auto auto;
-    grid-template-columns: 50% 50%; 
-    grid-template-areas: "header header"
-    "title title" 
-    "main main" 
-    "footer footer";          
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-areas: "header header header header"
+    "title title title title" 
+    "main main main main" 
+    "footer footer footer footer";          
     }
 
-
-/* Content */
+/* CONTENIDO */
 
 #navigation{
     grid-area: header;
@@ -45,12 +45,22 @@
     justify-content: left;
     }
 
+.navigation__link--logo{
+    width: 150px;
+    padding: 0 30px;
+}
+
 .navigation__link{
     margin: 15px;
     font-size: 16px;
     font-weight: 700;
     color: #000000;
     text-decoration-line: none;
+    }
+
+.navigation__link:hover {
+    color: white;
+    background:  rgb(0, 33, 179);;
     }
 
 #title{
@@ -74,10 +84,13 @@
 }
 
 .banner{
-    padding: 15px;
     display: flex;
     justify-content: center;
     }    
+
+.banner__image{
+    width: 700px;
+    } 
 
 #text{
     height: auto;
@@ -93,6 +106,7 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    text-align: center;
     }
 
 .text__paragraph{
@@ -113,6 +127,7 @@
      }
 
 .menu__button{
+    width: 230px;
     padding: 10px 30px;
 }
 
@@ -138,16 +153,16 @@
     font-weight: 400;
     font-size: 18px;
     color: #000000;
-    
-}
+    }
 
 #footer{
     grid-area: footer;
     background-color: rgb(197, 197, 197);
+    padding-bottom: 20px;
+    margin-top: 20px;
 }
 
 #footer{
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,14 +171,15 @@
     }
 
 .footer__info{
-    padding: 20px;
+    padding-top: 20px;
     }
 
 .footer__headline{
     font-weight: 700;
     font-size: 22px;
     color: #000000;
-    margin-top: 15px;
+    margin: 15px;
+    
 }
 
 .footer__link, .footer__paragraph{
@@ -171,34 +187,76 @@
     font-weight: 400;
     font-size: 18px;
     color: #000000;
-    margin-bottom: 20px;
+    margin: 15px;
+    line-height: 35px;
+}
+
+.footer__link:hover {
+    color: white;
+    background:  rgb(59, 59, 59);;
+    }
+
+/* VISTA PARA MOVIL */
+
+@media (max-width: 480px) {
+    #gridContainer {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "title"
+            "main"
+            "footer";
+        grid-template-rows: 320px auto auto auto;
+        grid-template-columns: minmax(320px, 420px);
+        }
+
+    #navigation{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        text-align: center;     
+
+        }
+
+    .navigation__link{
+    margin: 4px;
+    font-size: 16px;
+    }
+           
+    .banner__image{
+        width: 320px;
+        } 
+
+    .text__paragraph{
+        font-size: 16px;
+    }
+
+    .menu__button{
+        width: 190px;
+        padding: 5px 20px;
+    }
+
+    .footer__info {
+    padding-top: 10px;
+    }
+
+    .footer__link, .footer__paragraph{
+        line-height: 25px;
+
+    }
+
+    
+
+    
 }
 
 
 
+text-align: center;
+}
 
-
- #text
- 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    grid-template-areas: "header header header header" 
-    "title title title title" 
-    "image image image image"  
-    "subtitle subtitle subtitle subtitle" 
-    "menu menu menu menu" 
-    "discount discount discount discount"  
-    "footer footer footer footer";
-
-    grid-area: header;
-
-    grid-area: 1 , 1 , 2 , 5 ;
-    
-    display: flex;
-    align-content: center;
-    justify-content: left;
-
-    grid-area: 1 , 1 , 2 , 2 ;
+li {
+    position: relative;
+    top: 20px;
