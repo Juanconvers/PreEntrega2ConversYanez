@@ -115,8 +115,19 @@
     font-weight: 400;
     font-size: 24px;
     color: #000000;
-    
     }
+
+#filter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+         }
+
+.filter__selecter{
+        padding: 30px 30px;
+         }
 
 #menu{
     display: flex;
@@ -138,8 +149,8 @@
 #shopping{
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 60px;
     }
 
 .shopping__item{
@@ -147,6 +158,14 @@
     flex-direction: column;
     align-items: center;
     }
+
+.shopping__image{
+    height: 600px;
+}
+
+.shopping__image--camisa{
+    height: 450px;
+}
 
 .shopping__link{
     text-decoration-line: none;
@@ -232,6 +251,18 @@
     .text__paragraph{
         font-size: 16px;
     }
+
+    #filter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+         }
+
+    .filter__selecter{
+            padding: 7px 40px;
+            }
 
     .menu__button{
         width: 190px;
