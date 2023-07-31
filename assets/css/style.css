@@ -26,7 +26,7 @@
 
 #gridContainer{
     display: grid;
-    grid-template-rows: 160px auto auto 300px;
+    grid-template-rows: 160px auto auto auto;
     grid-template-columns: 50% 50%; 
     grid-template-areas: "header header"
     "title title" 
@@ -46,8 +46,11 @@
     }
 
 .navigation__link{
-    margin: 30px;
-    font-size: 20px;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration-line: none;
     }
 
 #title{
@@ -60,6 +63,7 @@
 #title{
     background-color: rgb(197, 197, 197);
     font-size: 30px;
+    font-weight: 700;
     padding: 10px;
     text-align: center;
     }
@@ -76,8 +80,7 @@
     }    
 
 #text{
-    height: 120px;
-    width: 100%;
+    height: auto;
     padding: 10px 50px;
     display: flex;
     flex-direction: column;
@@ -95,6 +98,9 @@
 .text__paragraph{
     padding: 10px;
     text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
     
     }
 
@@ -108,7 +114,10 @@
 
 .menu__button{
     padding: 10px 30px;
+}
 
+#text__second{
+    margin: 35px;
 }
 
 #shopping{
@@ -123,6 +132,14 @@
     flex-direction: column;
     align-items: center;
     }
+
+.shopping__link{
+    text-decoration-line: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    
+}
 
 #footer{
     grid-area: footer;
@@ -140,8 +157,22 @@
 
 .footer__info{
     padding: 20px;
-      }
+    }
 
+.footer__headline{
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.footer__link, .footer__paragraph{
+    text-decoration-line: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+}
 
 
 
